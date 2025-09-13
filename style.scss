@@ -1,0 +1,507 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.icon {
+    background-color: #fff;
+    height: 30px;
+    width: 30px;
+    color: #1E84C6;
+}
+
+.title-description {
+    color: #1E84B5;
+}
+
+.main-heading {
+    color: #1E84C6;
+
+    span {
+        color: #212529;
+    }
+}
+
+.account-link {
+    background-color: #1E84C6;
+    height: 47px;
+    width: 47px;
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    // cursor: pointer;
+}
+
+.star-icon {
+    color: #FFA800;
+}
+
+.navbar-custom-style {
+    background: #EFF8FF;
+
+    .navbar-brand-img {
+        width: auto;
+        max-height: 40px !important;
+    }
+
+    .active-tab {
+        color: #1E84C6;
+    }
+
+    .nav-tab {
+        &:hover {
+            color: #1E84C6;
+        }
+    }
+
+    .contact-btn {
+        background-color: #1E84C6;
+        text-decoration: none;
+        color: #fff !important;
+        border-radius: 25px;
+        padding: 8px 10px;
+
+        &:hover {
+            background-color: #0E384C;
+        }
+    }
+
+    .whatsapp-logo {
+        background-color: #fff;
+        height: 30px;
+        width: 30px;
+        color: #1E84C6;
+    }
+}
+
+.hero-section {
+    position: relative;
+    height: 100%;
+
+    .appointment-btn {
+        background-color: #1E84C6;
+        text-decoration: none;
+        color: #fff !important;
+        border-radius: 25px;
+        padding: 8px 10px;
+
+        &:hover {
+            background-color: #0E384C;
+        }
+    }
+
+    .header-title-description {
+        font-weight: 500;
+        letter-spacing: 2.8px;
+        font-size: 14px;
+    }
+
+    .bg-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -2;
+    }
+}
+
+.appointment-detail {
+    .appointment-detail-row {
+        min-height: 30vh;
+    }
+
+    background: #0E384C;
+
+    .appointment-btn {
+        background-color: #1E84C6;
+        text-decoration: none;
+        color: #fff !important;
+        border-radius: 25px;
+        padding: 8px 10px;
+
+        &:hover {
+            color: #0E384C !important;
+            background: #fff;
+
+            .icon {
+                background-color: #0E384C;
+                height: 30px;
+                width: 30px;
+                color: #1E84C6;
+            }
+        }
+    }
+
+    .numbers {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.services-section {
+    .services-container {
+        background: #EFF8FF;
+
+        .para-text {
+            font-size: clamp(16px, 1.32vw, 20px);
+        }
+    }
+
+}
+
+.about-clinic-section {
+    .image-box {
+        position: relative;
+        display: inline-block;
+    }
+
+    .top-image {
+        margin-bottom: 20px;
+        /* gap between images */
+    }
+
+    .bottom-image {
+        position: absolute;
+        top: 75%;
+        left: 20%;
+        width: 80%;
+    }
+
+    .badge-circle {
+        position: absolute;
+        top: 15px;
+        right: -75px;
+    }
+
+    .title-description {
+        font-size: 14px;
+        color: #1E84C6;
+        letter-spacing: 2.8px;
+    }
+
+    .main-heading {
+        font-size: clamp(35px, 3.22vw, 48px);
+    }
+
+    .check-icon {
+        background: #1E84C6;
+        color: #fff;
+        height: 20px;
+        width: 20px;
+        font-size: 12px;
+    }
+
+    .read-more-btn {
+        background-color: #1E84C6;
+        text-decoration: none;
+        color: #fff !important;
+        border-radius: 25px;
+        padding: 8px 10px;
+
+        &:hover {
+            background-color: #0E384C;
+        }
+    }
+
+    .contant-div {
+        .description {
+            line-height: clamp(28px, 2.1vw, 28.8px);
+        }
+    }
+
+    .img-div {
+        .bottom-image {
+            height: 260px;
+            overflow: hidden;
+        }
+
+        .bottom-image img {
+            height: 100%;
+            width: 85%;
+            object-fit: cover;
+        }
+    }
+
+}
+
+.cards-section {
+    // background: #EFF8FF;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(239, 248, 255, 1) 20%);
+
+    .card-custom-style {
+        border-radius: 35px;
+
+        .card-img {
+            border-radius: 25px;
+        }
+
+        .card-title {
+            font-weight: 600;
+        }
+
+        .appointment-btn {
+            background-color: #1E84C6;
+            text-decoration: none;
+            color: #fff !important;
+            border-radius: 25px;
+            padding: 8px 10px;
+
+            &:hover {
+                background-color: #0E384C;
+            }
+        }
+    }
+
+    .view-more-btn {
+        background-color: #1E84C6;
+        text-decoration: none;
+        color: #fff !important;
+        border-radius: 25px;
+        padding: 8px 10px;
+
+        &:hover {
+            background-color: #0E384C;
+        }
+    }
+
+    .card-text {
+        line-height: 1.8rem;
+    }
+
+    .card-icon-div {
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 55px;
+        width: 55px;
+        top: -26px;
+        left: 30px;
+        border-radius: 50%;
+
+        .card-icon {
+            height: 35px;
+        }
+    }
+
+}
+
+.dental-implants-detail {
+
+    .appointment-btn {
+        background-color: #1E84C6;
+        text-decoration: none;
+        color: #fff !important;
+        border-radius: 25px;
+        padding: 8px 10px;
+
+        &:hover {
+            background-color: #0E384C;
+        }
+    }
+
+    .inner-div {
+        background: #EFF8FF;
+        color: #1E84B5;
+
+        .logo {
+            max-height: 45px;
+            max-width: 45px;
+            border-radius: 50% !important;
+        }
+    }
+
+    .description {
+        line-height: clamp(28px, 2.1vw, 28.8px);
+    }
+}
+
+.dental-expert-treatment {
+    background:
+        linear-gradient(rgba(33, 37, 41, 0.50), rgba(33, 37, 41, 0.50)),
+        url("img/Background-img.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    .dental-treatment-col {
+        // background-color: #212529;
+        align-content: center;
+        min-height: 60vh;
+    }
+}
+
+.why-choose-us {
+    background: #EFF8FF;
+}
+
+.set-appointment-mather {
+    background: #EFF8FF;
+
+    .row-style {
+        align-items: center;
+    }
+
+    .accordion-style {
+        background: #EFF8FF;
+
+        button {
+            background: #EFF8FF;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+
+    .accordion-button {
+        display: flex;
+        justify-content: space-between !important;
+        /* push text left, arrow right */
+        align-items: center;
+    }
+}
+
+.testimonial-section {
+    background: #EFF8FF;
+
+    .image-box {
+        // position: relative;
+        display: inline-block;
+    }
+
+    .bottom-image {
+        background: #1E84C6;
+        position: absolute;
+        top: 76%;
+        left: 2%;
+        width: 93%;
+    }
+
+    .testimonial-img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .carousel {
+        
+        button {
+            padding: 0 !important;
+            width: 38px;
+            height: 38px;
+            border: none;
+            background-position: center !important;
+            background-color: #1E84B5 !important;
+            opacity: 1 !important;
+            border-radius: 10px !important;
+            top: 100%;
+            // margin-top: 24px;
+
+            &:hover {
+                background-color: #0E384C !important;
+            }
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-image: none !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+        }
+
+        .carousel-control-next {
+            left: 60px;
+        }
+
+        .carousel-control-prev-icon::before {
+            font-family: "Font Awesome 7 Free";
+            font-weight: 900;
+            content: "\f060";
+            font-size: 1rem;
+            color: #fff;
+        }
+
+        .carousel-control-next-icon::before {
+            font-family: "Font Awesome 7 Free";
+            font-weight: 900;
+            content: "\f061";
+            font-size: 1rem;
+            color: #fff;
+        }
+    }
+}
+
+.blogs-section {
+    background: #EFF8FF;
+
+    .blog-card-style {
+        .blog-card-img {
+            border-radius: 25px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        &:hover .blog-card-img {
+            transform: scale(1.05);
+            transition: all 0.3s ease-in-out;
+            border-radius: 25px 25px 0 0;
+        }
+    }
+
+    .read-more-btn {
+        color: #1E84B5;
+        transition: all 0.3s ease-in-out;
+        border: none;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+
+        .icon {
+            background-color: #1E84B5;
+            color: #fff !important;
+            height: 23px;
+            width: 23px;
+            transition: all 0.3s ease-in-out;
+            font-size: 12px;
+        }
+
+        &:hover {
+            color: #0e384c;
+
+            .icon {
+                color: #fff !important;
+                background-color: #0e384c;
+            }
+        }
+    }
+}
+
+.contact-us-section {
+    .appointment-btn {
+        background-color: #1E84C6;
+        text-decoration: none;
+        color: #fff !important;
+        border-radius: 25px;
+        padding: 8px 10px;
+
+        &:hover {
+            background: #0E384C !important;
+        }
+    }
+}
+
+.footer-section {
+    background: #0E384C;
+
+    .footer-logo {
+        // max-height: 250px;
+        max-width: 220px;
+    }
+
+    .links {
+        color: white;
+        text-decoration: none;
+    }
+}
