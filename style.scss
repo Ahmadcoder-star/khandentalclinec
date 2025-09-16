@@ -17,7 +17,8 @@
 
 .main-heading {
     color: #1E84C6;
-
+    animation: typing 4s steps(30, end) forwards,
+             blink 0.6s step-end infinite;
     span {
         color: #212529;
     }
@@ -138,14 +139,24 @@
         color: white;
         text-decoration: none;
     }
+
+    .set-border{
+        border: 0 !important;
+        border-left: 1px solid #2B5062 !important;
+    }
 }
 
 .services-section {
     .services-container {
-        background: #EFF8FF;
-
+        
         .para-text {
             font-size: clamp(16px, 1.32vw, 20px);
+            line-height: 28.8px;
+        }
+        .services-row{
+            max-width: 1076px !important;
+            background: #EFF8FF;
+            // width: 80% !important;
         }
     }
 
@@ -232,13 +243,25 @@
 
     .card-custom-style {
         border-radius: 35px;
+        border: none !important;
+        &:hover{
+            .card-title {
+                color: #1E84C6;
+                transition: all 0.3s ease-in-out;
+            }
+        }
 
         .card-img {
             border-radius: 25px;
+            max-height: 170px;
+            object-fit: cover;
         }
 
         .card-title {
             font-weight: 600;
+            display: inline-block; 
+            border-bottom: #F3E7FD 2px solid;
+            padding-bottom: 10px;
         }
 
         .appointment-btn {
@@ -321,7 +344,7 @@
 
 .dental-expert-treatment {
     background:
-        linear-gradient(rgba(33, 37, 41, 0.50), rgba(33, 37, 41, 0.50)),
+        linear-gradient(rgba(33, 37, 41, 0.70), rgba(33, 37, 41, 0.70)),
         url("img/Background-img.jpeg");
     background-size: cover;
     background-position: center;
@@ -336,6 +359,9 @@
 
 .why-choose-us {
     background: #EFF8FF;
+    .description{
+        line-height: 28.8px;
+    }
 }
 
 .set-appointment-mather {
@@ -362,6 +388,7 @@
         justify-content: space-between !important;
         /* push text left, arrow right */
         align-items: center;
+        color: #000;
     }
 }
 
@@ -479,6 +506,7 @@
 }
 
 .contact-us-section {
+    background: #EFF8FF;
     .appointment-btn {
         background-color: #1E84C6;
         text-decoration: none;
